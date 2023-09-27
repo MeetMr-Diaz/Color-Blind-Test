@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Color Blindness</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="youTube.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Color Blindness</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#third-container">Types</a></li>
+            <li><a href="#second-container">Testing</a></li>
+            <li><a href="#fifth-container">More Information</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Container -->
+    <div class="container-fluid bg-1 text-center">
+      <h3 class="margin">What Do You See</h3>
+      <img
+        src="/components/img1.jpg"
+        class="img-responsive img-circle margin"
+        style="display: inline"
+        alt="Bird"
+        width="350"
+        height="350"
+      />
+      <h3>Do You See a Number or Letter.</h3>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid bg-2 text-center" id="second-container">
+      <h3 class="margin">What is Color Blindness</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <a href="test.html" target="_blank" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Take The Test.
+      </a>
+    </div>
+
+    <!-- Third Container (Grid) -->
+    <div class="container-fluid bg-3 text-center" id="third-container">
+      <h3 class="margin">Common Types</h3>
+      <br />
+
+      <div class="row">
+        <div class="col-sm-4">
+          <h1>Protanopia</h1>
+          <p>
+            Hover over image to see how a person with Protanopia sees. <br>
+          </p>
+
+          <div class="image-container">
+            <img
+              src="/components/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('/components/Tritanopia.jpg')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <h1>Deuteranopia</h1>
+          <p>
+            Hover over image to see how a person with Deuteranopia sees. <br>
+          </p>
+          <div class="image-container">
+            <img
+              src="/components/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('/components/Deuteranopia.jpg')"
+            ></div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <h1>Tritanopia</h1>
+          <p>
+            Hover over image to see how a person with Tritanopia sees. <br>
+          </p>
+          <div class="image-container">
+            <img
+              src="/components/normalImg.jpg"
+              class="img-responsive margin"
+              style="width: 100%"
+              alt="Image"
+            />
+            <div
+              class="image-overlay"
+              style="background-image: url('/components/Tritanopia.jpg')"
+            ></div>
+          </div>
+      </div>
+
+      <!-- Add this code below to play three YouTube videos in the third container -->
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Sample Video of Protanopia <br> </h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/KcB_NhUNP0I"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Sample Video of Deuteranopia</h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/-UNQxXfY2AI"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="col-sm-4">
+          <h3>Sample Video of Tritanopia</h3>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/ZW2NVBvI9TA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <!-- End of YouTube video code -->
+    </div>
+    <!-- Fourth Container -->
+    <div class="container-fluid bg-5 text-center" id="fifth-container">
+      <h3 class="margin">More Information</h3>
+      <p>
+        For more information, please visit one of the links below. Feel free to
+        retake the test as many times as you like.
+      </p>
+
+      <p>
+        <a
+          href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness#:~:text=What%20is%20color%20blindness%3F,vision%20deficiency%20runs%20in%20families"
+          target="_blank"
+          >National Eye Institute - Color Blindness</a
+        ><br />
+        <a href="https://en.wikipedia.org/wiki/Color_blindness" target="_blank"
+          >Wikipedia - Color Blindness</a
+        ><br />
+        <a
+          href="https://www.nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/color-blindness/types-color-vision-deficiency"
+          target="_blank"
+          >Types of Color Vision Deficiency</a
+        ><br />
+        <a
+          href="https://www.aao.org/eye-health/diseases/what-is-color-blindness"
+          target="_blank"
+          >American Academy of Ophthalmology - What is Color Blindness</a
+        >
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-4 text-center">
+      <p>UMKC</p>
+    </footer>
+  </body>
+</html>
