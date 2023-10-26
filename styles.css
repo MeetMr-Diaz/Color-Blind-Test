@@ -64,3 +64,11 @@
     opacity: 1; /* Show the overlay on hover */
   }
   
+  #fifth-container {
+    background-color: white;
+    
+  }
+  #fifth-container h3,
+  #fifth-container p {
+    color: black;
+  }

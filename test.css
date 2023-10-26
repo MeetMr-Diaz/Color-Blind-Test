@@ -1,0 +1,20 @@
+
+.test-container {
+    text-align: center;
+    margin: 0; 
+    background-color: black;
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.image-container img {
+    max-width: 200%;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 100px;
+}

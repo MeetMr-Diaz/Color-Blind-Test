@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorblindness Test</title>
+    <link rel="stylesheet" href="test.css" />
+    <script src="test.js"></script>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Colorblindness Test</h1>
+        <div class="image-container">
+            <img src="/components/colortest_img1.jpg" alt="Colorblindness Test" id="test-image" />
+        </div>
+        <div class="response-container">
+            <p>What do you see?</p>
+            <button onclick="handleResponse('74')">74</button>
+            <button onclick="handleResponse('42')">42</button>
+            <button onclick="handleResponse('17')">17</button>
+            <button onclick="handleResponse('99')">99</button>
+            <!-- Add more answer choices as needed -->
+        </div>
+        <div class="results-container" id="results-container" style="display: none;">
+            <h2>Test Results</h2>
+            <p id="test-results"></p>
+        </div>
+</body>
+</html>
