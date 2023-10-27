@@ -3,27 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colorblindness Test</title>
-    <link rel="stylesheet" href="test.css" />
-    <script src="test.js"></script>
+    <title>Color Blindness Test</title>
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
+    <div class="header-container">
+        <h1>Color Blind Test</h1>
+        <h2>Select the number that you see in the image</h2>
+    </div> 
     <div class="test-container">
-        <h1>Colorblindness Test</h1>
-        <div class="image-container">
-            <img src="/components/colortest_img1.jpg" alt="Colorblindness Test" id="test-image" />
+        <div class="question" id = "question1">
+            <img src="./pics/7-blue-yellow.png" alt="Color Test Image 1" class="test-image">
+            <form class = "answer-grid">
+                <label>
+                    <input type="radio" name="q1" value="1"> 1
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="2"> 2
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="5"> 5
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="6"> 6
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="7"> 7
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="8"> 8
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="9"> 9
+                </label>
+                <label class = "wide-answer">
+                    <input type="radio" name="q1" value="blank"> The Image is Blank
+                </label>
+            </form>
         </div>
-        <div class="response-container">
-            <p>What do you see?</p>
-            <button onclick="handleResponse('74')">74</button>
-            <button onclick="handleResponse('42')">42</button>
-            <button onclick="handleResponse('17')">17</button>
-            <button onclick="handleResponse('99')">99</button>
-            <!-- Add more answer choices as needed -->
+        <div class="question" id = "question2">
+            <img src="./pics/1-red-green.png" alt="Color Test Image 1" class="test-image">
+            <form class = "answer-grid">
+                <label>
+                    <input type="radio" name="q2" value="1"> 1
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="2"> 2
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="3"> 3
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="4"> 4
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="5"> 5
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="6"> 6
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="7"> 7
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="8"> 8
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="9"> 9
+                </label>
+                <label class = "wide-answer">
+                    <input type="radio" name="q2" value="blank"> The Image is Blank
+                </label>
+            </form>
         </div>
-        <div class="results-container" id="results-container" style="display: none;">
-            <h2>Test Results</h2>
-            <p id="test-results"></p>
-        </div>
+    </div>
+    <script src="test.js"></script>
 </body>
 </html>

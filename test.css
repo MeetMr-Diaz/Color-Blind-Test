@@ -17,4 +17,90 @@
     margin: 0 auto;
     display: block;
     border-radius: 100px;
+}/* Style the container holding the headers */
+.header-container {
+    text-align: center;  /* Centers the text */
+    background-color: black;  /* Black background for the header */
+    padding: 20px 0;  /* Some padding to give it space above and below */
+}
+
+/* Style the main heading */
+.header-container h1 {
+    color: white;  /* White text color */
+    font-size: 2.5em;  /* Make it big */
+    margin-bottom: 15px;  /* Some space between the main heading and the subheading */
+    font-weight: bold;  /* Make it bold */
+}
+
+/* Style the subheading */
+.header-container h2 {
+    color: white;  /* White text color */
+    font-size: 1.2em;  /* Adjust the size as per your preference */
+}
+
+/* Your other styles related to the test would continue here... */
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif; /* Choose a suitable font */
+}
+
+.test-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make it take the full viewport height */
+    flex-direction: column;
+}
+
+.test-image {
+    max-width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap the content if needed */
+}
+
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeAat(3, 60px); /* Create 3 columns */
+    gap: 10px; /* Spacing between grid items */
+    margin-left: 20px;
+}
+
+.answer-grid label {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.answer-grid label:hover {
+    background-color: lightblue;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.answer-grid .wide-answer {
+    grid-column: 1 / span 3; /* Start from the first column and span 3 columns */
+    width: calc((60px * 3) + (2 * 10px)); /* Width of 3 columns plus 2 gaps */
+    height: 60px;  /* Increase height to make it more ovular */
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% / 70%; /* 50% for horizontal radius, 70% for vertical radius */
 }
